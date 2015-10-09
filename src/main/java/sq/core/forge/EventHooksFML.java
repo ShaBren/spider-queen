@@ -128,7 +128,7 @@ public final class EventHooksFML
 				{
 					if (player.worldObj.canBlockSeeTheSky((int) player.posX, (int) player.posY, (int) player.posZ))
 					{
-						if (player.getActivePotionEffect(Potion.nightVision) != null)
+						if (SpiderCore.getConfig().enableNightVision && player.getActivePotionEffect(Potion.nightVision) != null)
 						{
 							player.removePotionEffect(Potion.nightVision.id);
 						}
